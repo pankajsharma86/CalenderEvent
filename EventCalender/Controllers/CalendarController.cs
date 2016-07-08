@@ -51,7 +51,8 @@ namespace EventCalender.Controllers
                     
             return (ContentResult)data;
         }
-
+        
+        // to save data
         public ContentResult Save(int? id, FormCollection actionValues)
         {
             var action = new DataAction(actionValues);
